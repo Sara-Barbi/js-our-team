@@ -32,4 +32,25 @@ const team = [
   },
 ];
 
+let add= document.getElementById("addMemberButton");
+
+add.addEventListener('click', function(){
+  let ilNome =document.getElementById("name").value;
+  let ilRuolo =document.getElementById("role").value;
+  let lImg =document.getElementById("image").value;
+  
+  let elementoNome = document.createElement("h3");
+  elementoNome.textContent(ilNome);
+
+})
+
+/*
+for(let i in team){
+  console.log(team[i]);
+}
+*/
+
+
+
+
 
