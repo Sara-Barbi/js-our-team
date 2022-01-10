@@ -13,7 +13,7 @@ const team = [
   {
     name: 'Walter Gordon',
     role: 'Office Manager',
-    image: 'walter-gordon-office-menager.jpg',
+    image: 'walter-gordon-office-manager.jpg',
   },
   {
     name: 'Angela Lopez',
