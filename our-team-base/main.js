@@ -38,11 +38,25 @@ add.addEventListener('click', function(){
   let ilNome =document.getElementById("name").value;
   let ilRuolo =document.getElementById("role").value;
   let lImg =document.getElementById("image").value;
+
   
   let elementoNome = document.createElement("h3");
-  elementoNome.textContent(ilNome);
+  elementoNome.textContent=(ilNome);
+  
+  let elementoRuolo= document.createElement("p");
+  elementoRuolo.textContent=(ilRuolo);
+  
+  let elementoImg = document.createElement("img");
+  elementoImg.textContent=(lImg);
+
+  
+ 
+ 
+ 
+  
 
 })
+
 
 /*
 for(let i in team){
