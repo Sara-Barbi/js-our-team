@@ -32,14 +32,7 @@ const team = [
   },
 ];
 
-/*
-let add= document.getElementById("addMemberButton");
 
-add.addEventListener('click', function(){
-
-   
-})
-*/
 
 
 
@@ -61,6 +54,33 @@ for (let i=0; i<team.length; i++) {
   </div>
   `;
 }
+
+let add= document.getElementById("addMemberButton");
+
+add.addEventListener('click', function(){
+  let name=document.getElementById("name");
+  let role= document.getElementById("role");
+  let image=document.getElementById("image");
+
+  teamContainer.innerHTML += `
+  <div class="team-card">
+    <div class="card-image">
+      <img
+      src="img/${image.value}"
+      alt="${name.value}"
+      />
+    </div>
+    <div class="card-text">
+      <h3>${name.value}</h3>
+      <p>${role.value}</p>
+    </div>
+  </div>
+  `;
+
+   
+})
+
+
 
 
 
