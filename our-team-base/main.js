@@ -66,7 +66,7 @@ add.addEventListener('click', function(){
   <div class="team-card">
     <div class="card-image">
       <img
-      src="img/${image.value}"
+      src="${image.value}"
       alt="${name.value}"
       />
     </div>
