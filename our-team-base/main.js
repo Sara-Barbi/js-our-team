@@ -32,9 +32,12 @@ const team = [
   },
 ];
 
+/*
 let add= document.getElementById("addMemberButton");
 
 add.addEventListener('click', function(){
+
+   
 
 
   let ilNome =document.getElementById("name").value;
@@ -67,6 +70,7 @@ add.addEventListener('click', function(){
   let container = document.getElementById("team-container");
   container.appendChild(element);
 })
+*/
 
 
 /*
@@ -75,6 +79,24 @@ for(let i in team){
 }
 */
 
+let teamContainer = document.querySelector(".team-container");
+
+for (let i=0; i<team.length; i++) {
+  teamContainer.innerHTML += `
+  <div class="team-card">
+    <div class="card-image">
+      <img
+      src="img/${team[i].image}"
+      alt="${team[i].name}"
+      />
+    </div>
+    <div class="card-text">
+      <h3>${team[i].name}</h3>
+      <p>${team[i].role}</p>
+    </div>
+  </div>
+  `;
+}
 
 
 
