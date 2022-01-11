@@ -58,27 +58,33 @@ for (let i=0; i<team.length; i++) {
 let add= document.getElementById("addMemberButton");
 
 add.addEventListener('click', function(){
-  let name=document.getElementById("name");
-  let role= document.getElementById("role");
-  let image=document.getElementById("image");
+  const newCard = {
+    name: document.getElementById("name").value,
+    role: document.getElementById("role").value,
+    image: document.getElementById("image").value
+  }
+
+  team.push(newCard);
 
   teamContainer.innerHTML += `
   <div class="team-card">
     <div class="card-image">
       <img
-      src="${image.value}"
-      alt="${name.value}"
+      src="${newCard.image}"
+      alt="${newCard.name}"
       />
     </div>
     <div class="card-text">
-      <h3>${name.value}</h3>
-      <p>${role.value}</p>
+      <h3>${newCard.name}</h3>
+      <p>${newCard.role}</p>
     </div>
   </div>
   `;
 
    
 })
+
+console.log(team);
 
 
 
